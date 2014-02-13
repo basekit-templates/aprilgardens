@@ -347,10 +347,6 @@ footer h4 {
 /* FOLDER */
 
 .widget.extendednavigation ul li.folder {
-    margin-right: 16px;
-    background-image: image('/images/arrow-down.png');
-    background-position: right center;
-    background-repeat: no-repeat;
     cursor: pointer;
 }
 
@@ -625,7 +621,7 @@ footer h4 {
 
 .widget.paypalbuynow .widget.button.paypal {
   letter-spacing: 1px;
-  -webkit-border-radius: 4px;
+    -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
@@ -634,20 +630,6 @@ footer h4 {
   background-color: lighten(@font-swatch7-background-color,5%);
 }
 
-/* ===============================
-   DROPBOX BUTTON
-   =============================== */
-
-.widget.dropbox button {
-    letter-spacing: 1px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.widget.dropbox button:hover {
-    background-color: lighten(@font-swatch7-background-color,5%);
-}
 
 
 
@@ -1110,10 +1092,11 @@ hr.line.align-right {
 }
 
 .widget.tweet a {
-  padding: 20px 22px 20px 55px;
+  padding: 20px 22px 20px 45px;
    -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  background-image: image('/images/twitter.png');
   background-repeat: no-repeat;
   background-position: 20px center;
   margin: 2.2em auto;
@@ -1249,6 +1232,70 @@ hr.line.align-right {
 .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
     background-image: image('/images/social/socialicons-youtube.png');
     background-position: 20px;
+}
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch5;
+        }
+
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        button {
+            padding: 10px;
+            color: @font-swatch7-color;
+            font-size: @font-swatch6-font-size;
+            font-weight: @font-swatch6-font-weight;
+            line-height: @font-swatch6-line-height;
+            background-color: @font-swatch7-background-color;
+            border: none;
+        }
+    }
 }
 
 /* ===============================
