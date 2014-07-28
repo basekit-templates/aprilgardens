@@ -3,6 +3,7 @@
 	"thumbnail":"aprilgardens.png",
 	"screenshot":"aprilgardens.png",
 	"templateType":"standard",
+    "pageTypes": ["home"],
     "tags": {
     "en": ["minimal", "clean", "photography", "modern", "colorful", "colourful", "flexible", "open", "simple", "gardening", "sans-serif", "gardener"],
     "es": ["minimalista", "limpio", "fotografico", "moderno", "colorido", "flexible", "abierto", "simple", "jardineria", "sans-serif", "jardinero"],
