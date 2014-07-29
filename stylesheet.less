@@ -159,7 +159,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .bk-pt-default header {
     border-bottom: 1px solid  lighten(@color-swatch5,20%);
-    padding-bottom: 25px;
 }
 
 /* ===============================
@@ -168,10 +167,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 
 .bk-header {
-    margin: 40px 0;
     background-color: transparent;
-    border-bottom: 1px solid darken(@color-swatch2,10%);
-    padding-bottom: 33px;
+    padding: 33px 0;
     .wrapper {
     // Flex parent
     display: -webkit-box;
@@ -304,7 +301,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 
 header {
-    margin: 40px 0;
     background-color: @color-swatch1;
 }
 
@@ -391,9 +387,10 @@ footer h4 {
 }
 
 .widget.navigation ul li {
-    float: left;
-    display: block;
-    padding-right: 40px;
+  float: left;
+  display: block;
+  padding-right: 40px;
+
 }
 
 .widget.navigation ul li a {
@@ -423,12 +420,17 @@ footer h4 {
 }
 
 .widget.extendednavigation a.pull {
-    
+    @media @tablet {
+      top: 0;
+    }
 }
 
 .widget.extendednavigation ul {
     margin: 0;
     padding: 0;
+    @media @tablet {
+      margin-top: 40px;
+    }
 }
 
 /* ALIGNMENTS */
@@ -449,8 +451,13 @@ footer h4 {
 }
 
 .widget.extendednavigation ul li {
-    float: left;
-    display: block;
+  float: left;
+  display: block;
+  &.selected {
+    .text {
+      color: @font-swatch6-color-hover;
+    }
+  }
 }
 
 .widget.extendednavigation ul li a {
@@ -1796,19 +1803,18 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     .widget.extendednavigation {
         display: block;
         width: 100%;
-        margin-top: 20px;
+        margin-top: -20px;
     }
   
  .widget .extendednavigation ul {
     width: 100%;
     display: none;
-    margin: 0;
     border-top: 1px solid lighten(@color-swatch5,20%);
   }
 
   .widget.extendednavigation ul li {
     border-bottom: 1px solid lighten(@color-swatch5,20%);
-    padding: 16px 0;
+    padding: 0;
   }
 
    .widget.extendednavigation ul li:last-child {
@@ -1823,9 +1829,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
     color: @font-swatch6-color-hover;
   }
 
-  .widget.extendednavigation ul li.folder {
-    padding: 16px 0;
-  }
+
 
   .widget .extendednavigation li {
     width: 100%;
@@ -1833,8 +1837,16 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
   }
 
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-      padding: 5px 0;
+      padding: 10px 0;
       margin: 0;
+  }
+
+  .widget.extendednavigation ul li.folder  .text {
+    padding: 10px 10px;
+  }
+
+  .widget.extendednavigation ul.align-right li.folder > .text {
+    padding-right: 17px;
   }
 
   .widget.extendednavigation ul li > ul {
@@ -1844,7 +1856,7 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
   .widget.extendednavigation ul li:hover > ul {
       display: block!important;
       width: 100%;
-      margin: 16px 0;
+      margin: 0 0;
       padding: 0;
   }
 
@@ -1865,17 +1877,12 @@ footer .widget.profile .twitter span, .widget.profile .twitter span a {
   }
 
   .widget.extendednavigation ul li:hover > ul li:first-child {
-    padding-top: 16px;
     border-top: none;
   }
 
-    .widget.extendednavigation ul li:hover > ul li:last-child {
-    padding-top: 16px;
-  }
 
-  .widget.extendednavigation li:hover > ul > li > a {
-    padding-left: 10px;
-  }
+
+
 
 
     /* FEATURE */
