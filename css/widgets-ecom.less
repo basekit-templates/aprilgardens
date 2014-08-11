@@ -49,7 +49,7 @@
 	}
 
 	&.show-content .ecombasket-list-container {
-		background: mix(@color-swatch2, @color-swatch1, 10%);
+		background: darken(@color-swatch1, 5%);
 		padding: 32px;
 		border-radius: 7px;
 		position: relative;
@@ -71,7 +71,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 0 20.5px 27px 20.5px;
-			border-color: transparent transparent mix(@color-swatch2, #fff, 8%) transparent;
+			border-color: transparent transparent darken(@color-swatch1, 5%) transparent;
 		}
 	}
 
@@ -132,6 +132,7 @@
 						padding: 0 0.6em;
 						border-radius: 3px;
 						line-height: 1.4;
+						border: none;
 						&:hover {
 							background-color: darken(@color-swatch2, 10%);
 						}
@@ -156,7 +157,7 @@
 				}
 			}
 		}
-		.ecombasket-checkout-wrap {
+		.ecombasket-summary-wrap {
 			float: right;
 			margin: 0;
 			@media only screen and (max-width : 460px) {
@@ -841,7 +842,7 @@
 					position: absolute;
 					right: 20px;
 					display: block;
-					top: 20px;
+					top: 10px;
 					height: 30px;
 					line-height: 30px;
 					text-align: center;
@@ -857,10 +858,9 @@
 				.basket-summary-quantitybtn {
 					background-color: transparent;
 					margin: 0;
-					position: absolute;
+					position: relative;
 					width: 150px;
-					right: 20px;
-					top: 50px;
+					
 					height: 40px;
 					@media @bp-checkout-compact {
 						position: relative;
@@ -908,7 +908,7 @@
 					}
 					// Count
 					span {
-						background-color: fade(@color-swatch2,20%);
+						background-color: fade(@color-swatch2,10%);
 						color: @color-swatch5;
 						height: 40px;
 						line-height: 40px;
