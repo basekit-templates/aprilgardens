@@ -230,10 +230,12 @@ footer.bk-footer {
 	background-color: @color-swatch2;
 	padding: 2em 0;
 	margin-top: 3em;
-	color: @color-swatch1;
 	text-align: center;
-	 h1, h2, h3, h4 {
-	 	color: @color-swatch1;
+	color: contrast(@color-swatch2, black, white, 43%);
+	 h1, h2, h3, h4, p, a {
+	 	color: contrast(@color-swatch2, black, white, 43%);
+	}
+	h1, h2, h3, h4 {
 		padding-bottom: 20px;
 	}
 }
@@ -916,12 +918,7 @@ hr.line {
 		font-weight: @font-swatch5-font-weight;
 }
 
-footer {
-	.widget.profile span,
-	.widget.profile a {
-		color: lighten(@font-swatch5-color,50%);
-	}
-}
+
 
 .widget.profile a:hover {
 		color: @color-swatch3;
