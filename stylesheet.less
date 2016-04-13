@@ -15,6 +15,10 @@ body {
 	background-color: @color-swatch1;
 }
 
+body.edit .widget .bk-content-text, body.edit .widget .content {
+	min-height: 20px;
+}
+
 .wrapper {
 	width: 90%;
 	margin: 0 5%;
@@ -242,7 +246,7 @@ footer.bk-footer {
 		&:first-child {
 			padding: 20px 0 10px;
 			
-			.bk-tpl-hidden + .widget {
+			&.bk-tpl-hidden + .widget {
 				padding-top: 20px;
 			}
 		}
