@@ -1,7 +1,7 @@
 {
 	"name":"April Gardens",
 	"thumbnail":"aprilgardens.png",
-	"screenshot":"aprilgardens.png",
+	"screenshot":"april-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
