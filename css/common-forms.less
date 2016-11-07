@@ -18,7 +18,8 @@
 .widget.ecomcategorieslist ul li a,
 .blog-post-more-link a,
 .blog-list-footer .paginate-older,
-.widget.clicktocall a
+.widget.clicktocall a,
+.advancedcontactform__button
  {
 	padding: 0 15px;
 	display: inline-block;
@@ -147,7 +148,8 @@
 // Selects
 .widget.ecomproductslist .productlist-filter,
 .widget.ecomcheckout .delivery,
-.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation
+.widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation,
+.advancedcontactform
 {
 	& select {
 		text-indent: 0.01px;
@@ -185,6 +187,10 @@
 			border-color: @color-swatch2;
 		}
 	}
+}
+
+.advancedcontactform__select {
+	margin-bottom: 10px;
 }
 
 // Hides *custom* dropdown arrow in Firefox 30 and above
