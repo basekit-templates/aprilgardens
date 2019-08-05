@@ -1,5 +1,6 @@
 {
 	"name":"April Gardens",
+	"versionTenCompatible": 1,
 	"thumbnail":"aprilgardens.png",
 	"screenshot":"april-screenshot.jpg",
 	"templateType":"standard",
